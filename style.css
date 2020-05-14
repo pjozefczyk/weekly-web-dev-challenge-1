@@ -227,6 +227,11 @@ footer{
     display: inline;
     }
 
+    .column{
+      width: 80%;
+
+    }
+
     header{
     width: 525px;
     }
