@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+      <img src="logo.png" alt="logo">
+      <img src="company-name.png" alt="company name" class="company-name">
+  </header>
+
+
+<div class="container">
+<!--               first column               -->
+  <div class="column">
+<!--               register form               -->
+
+    <h2 class="form-name">Register Form<h2>
+    <form>
+      <div class="back">
+        <div class="register front">
+          <div class="padding-top">
+            <div class="input-container">
+              <img style="padding-right: 13px;" class="icon" src="icon_user.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+              <label for="username"></label>
+              <input class="input-field label-desc" type="text" name="username" placeholder="Username" required>
+            </div>
+          </div>
+          <div class="padding-top">
+            <div class="input-container">
+              <img class="icon" src="icon_password.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+              <label for="user-password"></label>
+              <input class="input-field" type="password" name="user-password" placeholder="Password" required>
+            </div>
+          </div>
+
+          <div class="padding-top">
+            <div class="input-container">
+              <img class="icon" src="icon_password.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+              <label for="user-password"></label>
+              <input class="input-field" type="password" name="user-password" placeholder="Confirm Password" required>
+            </div>
+          </div>
+
+          <div class="padding-top">
+            <div class="input-container">
+              <img style="padding-right: 13px;" class="icon" src="icon_email.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+              <label for="email"></label>
+              <input class="input-field" type="text" name="email" placeholder="Email" required>
+            </div>
+          </div>
+
+          <div class="padding-top">
+            <div class="input-container">
+              <img style="padding-right: 17px; padding-left: 5px"; class="icon" src="icon_location.png"> <p style="color:  rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+              <label for="location"></label>
+              <input class="input-field" type="text" name="location" id="location" placeholder="Location" required>
+            </div>
+          </div>
+
+            <div class="checkbox">
+              <input type="checkbox" id="terms" name="terms" checked required>
+              <label for="terms" type="checkbox" class="label-desc">I have read and accept the terms of use.</label>
+            </div>
+
+            <div class="button big-btn">
+              <button class="text-btn text-btn-big" name="button" type="send">Sign Up</button>
+            </div>
+
+        </div>
+      </div>
+    </form>
+
+<!--               send form               -->
+    <h2 class="form-name">Send Email<h2>
+      <form >
+        <div class="back">
+          <div class="send front">
+            <div class="padding-top">
+              <div class="input-container">
+                <img style="padding-right: 13px;" class="icon" src="icon_user.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+                <input class="input-field label-desc" type="text" name="username" placeholder="Your Name">
+              </div>
+            </div>
+
+            <div class="padding-top">
+              <div class="input-container">
+                <img style="padding-right: 13px;" class="icon" src="icon_email.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+                <input class="input-field" type="text" name="email"  placeholder="Your Email">
+              </div>
+            </div>
+            <div class="padding-top">
+              <div>
+                <textarea class="label-desc" name="textarea" placeholder="Type your message..."></textarea>
+              </div>
+            </div>
+
+            <div class="checkbox">
+              <input id="sendEmail" type="checkbox" name="sendEmail">
+              <label for="sendEmail" type="checkbox" class="label-desc">Send a copy to my email</label>
+            </div>
+
+            <div class="button big-btn">
+              <button class="text-btn text-btn-big" name="button" type="send">Send Email</button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+<!--               second column               -->
+    <div class="column">
+<!--               sign in form               -->
+<h2 class="form-name">Sign In Form<h2>
+      <form>
+          <div class="back">
+            <div class="signin front">
+              <div class="padding-top">
+                <div class="input-container">
+                  <img style="padding-right: 13px;" class="icon" src="icon_user.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+                  <input class="input-field label-desc" type="text" name="username" placeholder="Username">
+                </div>
+              </div>
+              <div class="padding-top">
+                <div class="input-container">
+                  <img class="icon" src="icon_password.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+                  <input class="input-field" type="password" name="password"  placeholder="Password">
+                </div>
+              </div>
+
+              <div class="checkbox to-left">
+                <input id="remember" type="checkbox" name="remebmer" checked>
+                <label for="remember" type="checkbox" class="label-desc">Remember me</label>
+              </div>
+
+              <div class="button small-btn to-right">
+                <button class="text-btn text-btn-sm" name="button" type="send">Sign In</button>
+              </div>
+            </div>
+          </div>
+      </form>
+<!--               recover form               -->
+
+    <h2 class="form-name">Recover<h2>
+      <form>
+          <div class="back">
+            <div class="recover front">
+              <div class="padding-top">
+                <div class="input-container">
+                  <img style="padding-right: 13px;" class="icon" src="icon_email.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+                  <input class="input-field" type="text" name="email"  placeholder="Enter your Email">
+                </div>
+              </div>
+              <div class="padding-top">
+                <div class="input-container">
+                  <img style="padding-right: 16px; padding-left:5px;" class="icon" src="icon_phone.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+                  <input class="input-field" type="text" name="email"  placeholder="Enter your Phone number">
+                </div>
+              </div>
+
+              <div class="button small-btn to-left">
+                <button class="text-btn text-btn-sm" name="button" type="send">Send</button>
+              </div>
+
+              <div class="button small-btn to-right">
+                <button class="text-btn text-btn-sm" name="button" type="send">Done</button>
+              </div>
+            </div>
+          </div>
+      </form>
+
+<!--               subscribe form               -->
+      <h2 class="form-name">Subscribe<h2>
+      <form>
+          <div class="back">
+            <div class="subscribe front">
+              <div class="padding-top">
+                <div class="input-container">
+                  <img style="padding-right: 13px;" class="icon" src="icon_email.png"><p style="color: rgb(198, 198, 198); padding-bottom: 5px; font-weight: 300; font-size: 1.9rem;">|</p>
+                  <input class="input-field" type="text" name="email"  placeholder="Enter your Email">
+                </div>
+              </div>
+
+              <div class="button small-btn to-left">
+                <button class="text-btn text-btn-sm" name="button" type="send">Subscribe</button>
+              </div>
+
+              <div class="button small-btn red to-right ">
+                <button class="text-btn text-btn-sm" name="button" type="send">No, Thanks</button>
+              </div>
+            </div>
+          </div>
+      </form>
+
+      <footer>
+        <img src="logo2.png">
+      </footer>
+
+    </div>
+</body>
+</html>
