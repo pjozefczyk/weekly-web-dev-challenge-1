@@ -26,18 +26,22 @@ header{
 
 .container{
   width: 1050px;
-  height: 1200px;
+  height: auto;
   margin: auto;
   display: flex;
   justify-content: center;
 }
 
 .column{
-  width: 420px;
+  max-width: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 40px;
+}
+
+form{
+  width: 100%;
 }
 
 .form-name{
@@ -100,6 +104,12 @@ header{
 .small-btn{
   height: 40px;
   width: 140px;
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(147, 208, 43);
+  border: 1px solid rgb(158, 158, 158);
 }
 
 .red{
@@ -144,7 +154,7 @@ header{
 }
 
 .checkbox{
-  padding: 5px 0 10px 0;
+  padding: 12px 0 12px 1px;
 }
 
 textarea{
@@ -161,10 +171,10 @@ textarea{
 }
 
 .front{
-    width: auto;
-    background-color: rgb(244, 244, 244);
-    border-radius: 6px;
-    padding: 0px 20px 20px 20px;
+  width: auto;
+  background-color: rgb(244, 244, 244);
+  border-radius: 6px;
+  padding: 0px 20px 20px 20px;
 }
 
 .register{
@@ -194,11 +204,10 @@ border: 1px solid rgb(198, 198, 198);
 content: ' ';
 border-radius: 3px;
 float: left;
-margin: 10px 0;
 }
 
 .checkbox label::after{
-top: 15px;
+top: 5px;
 left: -15px;
 content: '';
 float: left;
@@ -220,20 +229,93 @@ footer{
 
 @media only screen and (max-width: 480px) {
 
-  .container{
-    display: inline;
-    }
+.container{
+  width: 100%;
+  display: inline-block;
+}
 
-    .column {
-      width: 445px;
-    }
+.column {
+  padding: 0 5px;
+}
 
-    header{
-    width: 525px;
-    }
+header{
+  max-width: 300px;
+  height: auto;
+  padding: 20px;
+}
 
-    footer img{
-      padding-bottom: 70px;
-    }
+form{
+  width: 100%;
+}
+
+.input-container, .small-btn {
+  max-width: 90%;
+}
+
+.front{
+  padding: 0 15px 15px 15px;
+}
+
+.back{
+  margin: 15px 10px 20px 10px;
+  max-width: 92%;
+  padding: 15px;
+}
+
+.input-field{
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 1px 1px 1px 8px;
+}
+
+.form-name{
+  font-size: 1.5rem;
+}
+
+.label-desc{
+  font-size: 0.9rem;
+  max-width: 92%;
+  color: rgb(151, 148, 148);
+}
+
+.big-btn {
+  width: auto;
+}
+
+.small-btn, .red {
+  display: inline-block;
+  width: auto;
+}
+
+.text-btn-big, .text-btn-sm {
+  font-size: 0.9rem;
+}
+
+.text-btn-sm {
+  width: 100px;
+  padding: 0 10px;
+}
+
+.checkbox{
+  height: 30px;
+  padding: 10px 0 4px 1px;
+}
+
+.logo{
+  max-width: 60px;
+  padding-left: 30px;
+}
+
+.company-name{
+  max-width: 180px;
+}
+
+.logo-last{
+  max-width: 270px;
+}
+
+footer{
+  padding: 50px 10px;
+}
 
 }
